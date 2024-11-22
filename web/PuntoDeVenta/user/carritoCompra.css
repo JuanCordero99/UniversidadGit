@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0275ce;
+    position: relative; /* Agrega posición relativa para el body */
+}
+
+#titulo-carrito {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+main {
+    padding-top: 20px; /* Ajusta el margen superior del contenido principal */
+    margin-bottom: 60px; /* Asegura un espacio suficiente para el pie de página */
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.detalles-producto {
+    flex: 1;
+}
+
+.cantidad-butones {
+    display: flex;
+    align-items: center;
+}
+
+.cantidad-butones button {
+    background-color: #FF7700;
+    color: #111;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cantidad-butones button:hover {
+    background-color: #d2691f; /* Color más oscuro para el degradado */
+}
+
+.contenedor-boton-finalizar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+} 
+
+.contenedor-boton-finalizar a.boton {
+    background-color: #FF9800;
+    color: #111;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.contenedor-boton-finalizar a.boton:hover {
+    background-color: #d2691f; /* Color más oscuro para el degradado */
+}
+
+
+
+#pie-pagina {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    width: 100%;
+    bottom: 0;
+}
+@media (min-width: 800px) {
+#pie-pagina {
+    position: fixed;
+}
+}
+#pie-pagina p {
+    margin: 0;
+}
+@media (max-width: 768px) {
+    #pie-pagina {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .producto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .producto img {
+        margin: 0 auto 10px auto;
+    }
+
+    .contenedor-boton-finalizar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-boton-finalizar a.boton {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,22 @@
+body {
+    background-color: #0275ce;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 80px; /* Ajusta la altura máxima según sea necesario */
+}
+
+.titulo_reporte_ventas{
+    background-color: #c0c0c2;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+}

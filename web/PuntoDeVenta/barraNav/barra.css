@@ -1,0 +1,33 @@
+.navbar-brand {
+    margin-right: 2rem; /* Espacio a la derecha de la marca */
+  }
+  .profile-img {
+    width: 40px; /* Tamaño de la imagen de perfil */
+    height: 40px;
+    border-radius: 50%; /* Forma redondeada */
+    object-fit: cover; /* Ajuste de la imagen */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+  }
+  .offcanvas-header {
+    background-color: #343a40; /* Color de fondo del header */
+    color: white; /* Color del texto del header */
+  }
+  .offcanvas-body {
+    background-color: #f8f9fa; /* Color de fondo del cuerpo */
+  }
+  .offcanvas-body .nav-link {
+    color: #495057; /* Color del texto del enlace */
+  }
+  .offcanvas-body .nav-link:hover {
+    color: #007bff; /* Color del texto del enlace al pasar el ratón */
+  }
+
+  @media (max-width: 800px) {
+    .icono-perfil {
+      width: 5vw; /* Tamaño para pantallas menores de 800px */
+    }
+
+    .icono-carrito {
+      width: 5vw; /* Tamaño para pantallas menores de 800px */
+    }
+  }

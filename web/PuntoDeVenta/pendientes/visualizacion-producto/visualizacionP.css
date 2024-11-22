@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: 111;
+    background-color: #0275ce;
+    text-align: center;
+    padding: 10px; /* Añade un poco de relleno al body */
+}
+
+.barra-navegacion {
+    background-color: #c0c0c2;
+    padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px; /* Reducir el ancho de la imagen del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 5px; /* Ajusta el margen izquierdo según sea necesario */
+}
+
+.barra-buscar input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 250px; /* Reducir el ancho de la barra de búsqueda */
+    margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+    font-size: 1em; /* Restaura el tamaño de la fuente para pantallas grandes */
+    border-color: #333;
+}
+
+.detalle-producto {
+    margin: 30px auto; /* Centra el detalle del producto */
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 10px;
+    background-color: #c0c0c2;
+    color: #333;
+}
+
+/* Se añade un margen a los lados del detalle del producto para dispositivos grandes */
+@media (min-width: 992px) {
+    .detalle-producto {
+        margin: 30px; /* Agrega un margen a los lados */
+    }
+}
+
+.detalle-producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: -10%;
+}
+
+.detalle-producto h2 {
+    font-size: 1.8em; /* Reducir el tamaño de la letra */
+    margin-bottom: 10px;
+}
+
+.detalle-producto .descripcion p {
+    font-size: 1em; /* Reducir el tamaño de la letra */
+    line-height: 1.6;
+}
+
+.detalle-producto .descripcion hr {
+    border: none;
+    height: 2px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.detalle-producto .descripcion ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.detalle-producto .descripcion ul li {
+    margin-bottom: 10px;
+}
+
+.detalle-producto .descripcion ul li:before {
+    content: "\2022"; /* Agrega un bullet point personalizado */
+    color: #fff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.detalle-producto p {
+    font-size: 1em; /* Reducir el tamaño de la letra */
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.detalle-producto .price {
+    text-align: center; /* Centra el contenido del precio */
+}
+
+.detalle-producto .price p {
+    font-size: 1.3em; /* Reducir el tamaño de la letra */
+    margin-bottom: 10px;
+}
+
+.botones-grupo {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.boton {
+    color: #fff;
+    background-color: #f44336;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em; /* Reducir el tamaño de la letra */
+    border: none;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #444;
+}
+
+.cantidad-butones {
+    display: flex;
+    align-items: center;
+}
+
+.cantidad-botones {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.detalle-producto {
+    margin: 30px auto; /* Centra el detalle del producto */
+    padding: 20px;
+    max-width: 90%; /* Establece un ancho máximo del 90% del contenedor principal */
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 10px;
+    background-color: #c0c0c2;
+    color: #333;
+}
+
+/* Se añade un margen a los lados del detalle del producto para dispositivos grandes */
+@media (min-width: 992px) {
+    .detalle-producto {
+        margin: 30px auto; /* Centra el detalle del producto */
+        max-width: 600px; /* Restaura el ancho máximo para pantallas más grandes */
+    }
+}
+
+footer {
+    background-color: #c0c0c2;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}

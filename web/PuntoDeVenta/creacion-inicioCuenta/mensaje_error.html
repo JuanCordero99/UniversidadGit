@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="../creacion-inicioCuenta/sesion.css">
+</head>
+<body>
+    <header class="sesion">
+        <img src="../imagenes/barra-navegacion/electronics.png" alt="Logo de Electronics For All" class="logo">
+    </header>
+    <form action="../iniciosesion.php" method="POST" style="background-color: #c0c0c2;">
+        <fieldset>
+            <legend>Inicio de sesión</legend>
+            <div class="form_input">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Ingresa tu correo electronico" id="correo" name="correo" required>
+            </div>
+            <div class="form_input">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" placeholder="Ingresa tu Contraseña" id="contrasena" name="contrasena" required>
+            </div>
+            <div class="contenedor" style="background-color:#ff0033; border: 2px solid #ccc color#999;">
+                <p class="error">El correo o la contraseña  son errôneos.</p>
+            </div>
+        </fieldset>
+        <div class="form_input">
+            <button class="boton" type="submit" id="iniciar-sesion" name="iniciar_sesion">Iniciar sesión</button>
+        </div>
+        <div class="form_input">
+            <p>¿No tienes una cuenta aún?</p>
+            <a href="../creacion-inicioCuenta/crearcuenta.html" id="crear-cuenta">¡Crear cuenta!</a>
+        </div>
+        <div class="form_input">
+            <p>¿No estás interesado? - <a href="../public" id="regresar-inicio">Regresa al inicio</a></p>
+        </div>
+    </form>
+</body>
+</html>

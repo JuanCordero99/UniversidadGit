@@ -1,0 +1,51 @@
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.navbar-brand img {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+.navbar-nav {
+    margin-left: auto; /* Centra los elementos de la barra de navegación */
+}
+.navbar-text {
+    color: #333; /* Color del texto */
+    margin-right: 1rem; /* Espaciado a la derecha para separar del siguiente elemento */
+}
+body {
+    margin: 0;
+    /* Mantén tus propiedades actuales del body aquí */
+
+}
+.centered-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+.centered-content img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.navbar-brand img {
+    width: 120px; /* Tamaño del logo en dispositivos grandes */
+}
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 100px; /* Tamaño del logo en dispositivos medianos */
+    }
+}
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 80px; /* Tamaño del logo en dispositivos pequeños */
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto - telefono1</title>
+    <link rel="stylesheet" href="visualizacionP.css">
+</head>
+<body>
+    <header class="barra-navegacion">
+        <div class="logo">
+            <img src="../imagenes/barra-navegacion/electronics.png" alt="ElectronicsForAll Logo">
+        </div>
+        <div class="barra-buscar">
+            <input type="text" placeholder="¿Qué producto estás buscando?" id="buscar-producto" name="buscar-producto">
+        </div>
+    </header>
+    
+    <div class="detalle-producto">
+        <img src="/imagenes/productos-imagenes/telefonos/1.png" alt="telefono1" id="imagen-producto" name="imagen-producto">
+        <h2 id="nombre-producto">Iphone 15 pro max</h2>
+        <p class="price" id="precio-producto">$45,000.00</p>
+        <div class="descripcion">
+            <p>El iPhone 15 Pro Max redefine la excelencia en la industria de los smartphones con su fusión de innovación tecnológica y diseño elegante. Este dispositivo de última generación presenta un rendimiento incomparable, una cámara revolucionaria y una experiencia de usuario sin igual.</p>
+            <p>Con una pantalla Super Retina XDR de 6.9 pulgadas, el iPhone 15 Pro Max ofrece una calidad visual extraordinaria con colores vibrantes, negros profundos y un brillo impresionante. La tecnología ProMotion garantiza una respuesta táctil ultra suave y una experiencia fluida en cada interacción.</p>
+            <p>La potente cámara triple de 16MP + 12MP + 12MP redefine la fotografía móvil, capturando imágenes sorprendentes con detalles excepcionales y colores precisos en cualquier condición de iluminación. La función de zoom óptico mejorado permite acercarse al sujeto sin comprometer la calidad de la imagen.</p>
+        </div>
+        <div class="botones-grupo">
+            <a href="../home/home.html" class="boton" id="enlace-volver" name="enlace-volver">Volver a Productos</a>
+            <div class="cantidad-butones">
+                <button class="cantidad-botones" id="disminuir">-</button>
+                <span id="cantidad" name="quantity">1</span>
+                <button class="cantidad-botones" id="aumentar">+</button>
+            </div>
+            <button class="boton" id="añadir-carrito" name="añadir-carrito">Añadir al Carrito</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Electronics For All. Todos los derechos reservados.</p>
+    </footer>
+
+       <script>
+    // JavaScript para manejar la cantidad de productos
+    const quantityElement = document.getElementById('cantidad');
+    const decreaseButton = document.getElementById('disminuir');
+    const increaseButton = document.getElementById('aumentar');
+    
+    let quantity = 1; // Cantidad inicial
+    
+    // Función para aumentar la cantidad
+    increaseButton.addEventListener('click', () => {
+        quantity++;
+        quantityElement.textContent = quantity;
+    });
+    
+    // Función para disminuir la cantidad (mínimo 1)
+    decreaseButton.addEventListener('click', () => {
+        if (quantity > 1) {
+            quantity--;
+            quantityElement.textContent = quantity;
+        }
+    });
+</script>

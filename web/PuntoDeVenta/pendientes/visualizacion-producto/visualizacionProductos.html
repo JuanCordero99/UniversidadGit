@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto - Laptop 1</title>
+    <link rel="stylesheet" href="visualizacionP.css">
+</head>
+<body>
+    <header class="barra-navegacion">
+        <div class="barra-buscar">
+            <input type="text" placeholder="¿Qué producto estás buscando?" id="buscar-producto" name="buscar-producto">
+        </div>
+    </header>
+    
+    <div class="detalle-producto">
+        <img src="../imagenes/productos-imagenes/laptops/7.png" alt="laptop1" id="imagen-producto" name="imagen-producto">
+        <h2 id="nombre-producto">Acer nitro 5</h2>
+        <p class="price" id="precio-producto">$17,000.00</p>
+        <div class="descripcion">
+            <p>La Acer Nitro 5 es una potente laptop diseñada para gamers y usuarios que requieren alto rendimiento en aplicaciones exigentes. Equipada con un procesador Intel Core i7 de última generación y una tarjeta gráfica NVIDIA GeForce RTX 3060, esta laptop ofrece un rendimiento excepcional para juegos y aplicaciones de diseño.</p>
+
+            <p>Con una pantalla Full HD de 15.6 pulgadas y una frecuencia de actualización de 144Hz, la Acer Nitro 5 proporciona imágenes nítidas y fluidas para una experiencia de juego inmersiva. Además, cuenta con un sistema de enfriamiento avanzado para mantener la temperatura bajo control durante sesiones de juego prolongadas.</p>
+            
+            <p> La Acer Nitro 5 también ofrece una amplia conectividad, incluyendo puertos USB-C, HDMI y Ethernet, para una fácil conexión a dispositivos externos y redes. Con su teclado retroiluminado y un diseño robusto, esta laptop ofrece estilo y durabilidad para enfrentar cualquier desafío.</p>
+        </div>
+        <div class="botones-grupo">
+            <a href="../home/home.html" class="boton" id="enlace-volver" name="enlace-volver">Volver a Productos</a>
+            <div class="cantidad-butones">
+                <button class="cantidad-botones" id="disminuir">-</button>
+                <span id="cantidad" name="quantity">1</span>
+                <button class="cantidad-botones" id="aumentar">+</button>
+            </div>
+            <button class="boton" id="añadir-carrito" name="añadir-carrito">Añadir al Carrito</button>
+        </div>
+    </div>
+
+    <img src="/imagenes/productos-imagenes/laptops/10.png " alt="">
+
+    <footer>
+        <p>&copy; 2024 Electronics For All. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+    // JavaScript para manejar la cantidad de productos
+    const quantityElement = document.getElementById('cantidad');
+    const decreaseButton = document.getElementById('disminuir');
+    const increaseButton = document.getElementById('aumentar');
+    
+    let quantity = 1; // Cantidad inicial
+    
+    // Función para aumentar la cantidad
+    increaseButton.addEventListener('click', () => {
+        quantity++;
+        quantityElement.textContent = quantity;
+    });
+    
+    // Función para disminuir la cantidad (mínimo 1)
+    decreaseButton.addEventListener('click', () => {
+        if (quantity > 1) {
+            quantity--;
+            quantityElement.textContent = quantity;
+        }
+    });
+</script>

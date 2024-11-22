@@ -1,0 +1,218 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #111;
+    background-color: #0275ce;
+    text-align: center;
+}
+
+/* Estilos para el encabezado */
+header {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 100%;
+    max-width: 50vh;
+    height: auto;
+    display: block;
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: transparent;
+    padding: 10px 0;
+    max-width: 500px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 10px #111;
+    font-size: 16px;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para los campos de entrada y select */
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: 1px solid #111;
+    background-color: transparent;
+    border-radius: 7px;
+    color: #111;
+}
+
+/* Estilos para las etiquetas */
+label {
+    font-size: 0.9em;
+    line-height: 2;
+}
+
+/* Estilos para el botón del formulario */
+.form_input button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #FFF;
+    background-color: #FF7C39;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Cambiar color de fondo al pasar el cursor */
+.form_input button:hover {
+    background-color: #DE2E03;
+}
+
+/* Estilos para los enlaces en el formulario */
+.form_input a {
+    color: #111;
+    padding: 6px 8px;
+    display: inline-block;
+    font-size: 1em;
+}
+
+.contenedor {
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+
+.contenedor .error {
+    padding: 2px;
+
+    color: #333;
+    font-size: 1em;
+}
+
+/* Estilos para el placeholder */
+input::placeholder,
+select::placeholder {
+    color: #111;
+}
+
+
+
+/* Media Queries para Diseño Responsivo */
+@media (max-width: 1024px) {
+    .logo {
+        max-width: 40vh;
+    }
+
+    form {
+        margin: 20px auto;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .form_input button {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 30vh;
+    }
+
+    form {
+        margin: 20px auto;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .form_input button {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 20vh;
+    }
+
+    form {
+        margin: 10px auto;
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .form_input {
+        padding: 5px 10px;
+    }
+
+    .form_input button {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+
+    label {
+        font-size: 0.8em;
+    }
+}
+
+/* Nuevo media query para agregar espacio al formulario en pantallas más pequeñas */
+@media (max-width: 779px) {
+    form {
+        margin: 20px;
+    }
+}
+
+/* Nuevo media query para centrar más el formulario en pantallas más pequeñas */
+@media (max-width: 999px) {
+    form {
+        margin: 20px auto;
+    }
+}
+/* Estilos para el formulario */
+form {
+    background-color: transparent;
+    padding: 10px 20px; /* Añadido margen a los lados */
+    max-width: 500px;
+    margin: 30px auto; /* Centrado vertical y horizontal */
+    box-shadow: 0px 0px 10px #333;
+    font-size: 16px;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Media Queries para Diseño Responsivo */
+@media screen and (max-width: 768px) {
+    .sesion {
+        margin-top: 30%;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cuenta {
+        margin-top: 10%;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    form {
+        margin: auto; /* Centra horizontalmente */
+        margin-left: 10px; /* Agrega espacio a la izquierda */
+        margin-right: 10px; /* Agrega espacio a la derecha */
+        margin-top: 20px; /* Agrega un margen superior */
+    }
+}
+
+
+/* Nuevo media query para centrar más el formulario en pantallas más pequeñas */
+@media (max-width: 999px) {
+    form {
+        margin: 20px auto; /* Centrado horizontal con un poco de margen en los lados */
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <link rel="stylesheet" href="../creacion-inicioCuenta/sesion.css">
+</head>
+<body>
+    <header class="cuenta">
+        <img src="../imagenes/barra-navegacion/electronics.png" alt="Logo de Electronics For All" class="logo">
+    </header>
+    <form action="/integradora_diseno/registro_usuario.php" method="POST" style="background-color: #C0C0C0;">
+        <fieldset>
+            <legend>Crear cuenta</legend>
+            <div class="form_input">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Ingresar nombre" id="nombre" name="nombre" required>
+            </div>
+            <div class="form_input">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" placeholder="Ingresar apellidos" id="apellidos" name="apellidos" required>
+            </div>
+            <div class="form_input">
+                <label for="telefono">Teléfono</label>
+                <input type="text" placeholder="Ingresar telefono" id="telefono" name="telefono" required>
+            </div>
+            <div class="form_input">
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="nacimiento" name="fecha_nac" required>
+            </div>
+            <div class="form_input">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Ingresa tu correo electronico" id="email" name="correo" required>
+            </div>
+            <div class="form_input">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" placeholder="Ingresa tu Contraseña" id="contrasena" name="contrasena" required>
+            </div>
+        </fieldset>
+        <div class="form_input">
+            <button class="boton" type="submit" id="crear-cuenta" name="crear_cuenta">Crear cuenta</button>
+        </div>
+        <div class="form_input">
+            <p>¿Ya tienes una cuenta?</p>
+            <a href="/integradora_diseno/creacion-inicioCuenta/iniciarSesion.html" id="iniciar-sesion">¡Iniciar sesión!</a>
+        </div>
+    </form>
+</body>
+</html>

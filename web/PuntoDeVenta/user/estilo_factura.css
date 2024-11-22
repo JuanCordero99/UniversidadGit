@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c0c0c2;
+
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.titulo_facturacion {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contenedor_factura {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 300px;
+}
+
+.contenedor_datos_empresa,
+.contenedor_datos_cliente,
+.contenedor_detalles_factura {
+    margin-bottom: 20px;
+}
+
+.titulo_datos_empresa,
+.titulo_datos_cliente,
+.titulo_detalles_factura {
+    border-bottom: 2px solid #0275ce;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.productos_a_facturar {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.table {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #FF9800;
+    color: black;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-bordered {
+    border: 1px solid #FF9800;
+}
+
+.pie {
+    text-align: center;
+    background-color: #0275ce;
+    color: white;
+    padding: 10px 0;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,236 @@
+
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #0275ceff; /* Cambia el color de fondo aquí */
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #c0c0c2;
+    color: #111;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Estilos del ícono de menú */
+.menu img {
+    width: 50px;
+    height: 30px;
+}
+
+/* Estilos del contenedor de búsqueda y perfil */
+.search-profile-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Para que ocupe el espacio restante */
+}
+
+/* Estilos de la barra de búsqueda */
+.navbar .search-bar {
+    margin-right: 10px; /* Espacio entre la barra de búsqueda y los iconos */
+    width: 150px; /* Ancho predeterminado de la barra de búsqueda */
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 100%; /* La barra de búsqueda ocupará todo el espacio disponible */
+    font-size: 14px; /* Tamaño de fuente predeterminado */
+}
+
+/* Estilos de los iconos */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+.ingresar-link {
+    color: fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    background-color: #666;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.cart-container img,
+.icons img {
+    width: 30px;
+    height: auto;
+}
+
+.ingresar-link:hover {
+    background-color: #111;
+}
+
+.carricono div {
+    margin-left: 10px; /* Espacio entre el botón de ingresar y el carrito de compras */
+}
+
+.perfiling img, 
+.icons img {
+    margin-right: 10px; /* Espacio entre los iconos */
+}
+
+/* Media Query para laptops con una anchura mínima de 769px */
+@media (min-width: 769px) {
+    .navbar .search-bar {
+        width: 350px; /* Ancho aumentado de la barra de búsqueda en laptops */
+        font-size: 0.8em; /* Tamaño de fuente más pequeño para laptops */
+    }
+}
+
+/* Media Query para dispositivos con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    .navbar .search-bar {
+        width: 140px; /* Ancho reducido de la barra de búsqueda en dispositivos móviles */
+        font-size: 0.5em; /* Tamaño de fuente más pequeño para dispositivos móviles */
+    }
+
+    .search-bar input[type="text"] {
+        font-size: 8px; /* Reducir el tamaño de fuente para dispositivos móviles */
+    }
+    .contenedor-padre {
+        padding-left: -40%;
+    }
+    .plantilla-usuario div {
+        margin-left: -0.55%;
+        margin-right: -0.5%;
+    }
+    
+    .texto-tarjeta-correo {
+        font-weight: 600;
+        font-size: 0.75em;
+    }
+    .cart-container {
+        display: flex;
+        position: absolute;  
+        top: 1%;              
+        left: 80%;             
+        margin: 10px;        
+    }
+    
+    .icons { 
+        gap: 5px; /* Espacio entre los iconos */
+    }
+
+    .ingresar-link {
+        padding: 2px 5px; /* Reducir el espacio interno del botón */
+        font-size: 0.7em; /* Reducir el tamaño de fuente del botón */
+    }
+
+    .logo {
+        display: none; /* Ocultar el logo en pantallas pequeñas */
+    }
+}
+/* Media Query para el ancho de pantalla de un iPhone (375px) */
+@media (max-width: 600px) {
+    .logo, .cart-container, .ingresar-link {
+        margin-left: auto; /* Alinea los elementos a la derecha */
+        margin-right: 10px; /* Agrega un espacio entre los elementos */
+    }
+}
+
+
+/* Media Query para dispositivos con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: row; /* Cambiar a dirección de fila para colocar elementos en una fila */
+        justify-content: space-between; /* Espacio entre los elementos */
+        align-items: center; /* Alinear elementos verticalmente al centro */
+    }
+
+    .menu, .search-profile-container {
+        display: flex; /* Mostrar elementos como flex para controlar su alineación */
+        align-items: center; /* Alinear elementos verticalmente al centro */
+    }
+
+    .menu img {
+        margin-right: 10px; /* Espacio entre el ícono del menú y la barra de búsqueda */
+    }
+
+    .search-profile-container {
+        margin-left: auto; /* Mover el contenedor de búsqueda y perfil al extremo derecho */
+    }
+}
+
+/* PIE DE PAGINA */
+.pie {
+    background-color: #c0c0c2; /* Color de fondo del pie de página */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alinear el texto al centro */
+    width: 100%; /* Asegurar que el contenedor ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Incluir padding y borde en el ancho y alto del elemento */
+}
+
+.pie footer p {
+    margin: 0; /* Eliminar márgenes */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #111; /* Color del texto */
+}
+
+.titulo-usuario{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 200%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.perfiling{
+    width: 40%;
+    height: 40%;
+    border-radius: 10%;
+    border: 10px solid #FF9800;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plantilla-usuario{
+    background-color: #c0c0c2;
+    margin-bottom: 20%;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid #FF9800;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20%;
+    padding: 5%;
+}
+
+.nombre-usuario,
+.apellido-usuario,
+.correo-usuario,
+.telefono-usuario{
+    background-color: #FF9800;
+    padding-left: 1%;
+    left: -10%;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin: 30px;
+}
+
+.seccion-datos{
+    background-color: #969292;
+    border: 5px solid #c0c0c2;
+    margin-right: 1%;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    top: 10%;
+}
+
+.texto-tarjeta{
+    font-weight: bold;
+    font-size: 110%;
+}
